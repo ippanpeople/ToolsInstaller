@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo yum update -y
 sudo yum upgrade -y
-sudo yum install -y vim curl wget net-tools nmap
+sudo yum install -y vim curl wget net-tools nmap sssd realmd samba-common-tools oddjob oddjob-mkhomedir
 curl -fsSL https://get.docker.com/ | sh
 sudo systemctl start docker.service
 sudo systemctl enable docker.service
